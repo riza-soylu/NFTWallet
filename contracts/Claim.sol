@@ -15,7 +15,7 @@ contract Claim is ERC1155, Ownable {
     mapping (address => uint256[]) public claimList;
   
 
-    constructor () ERC1155("https://gateway.pinata.cloud/ipfs/QmdQrE7Zy7GmTv1JLi67sA7JhjyjBfLoLpy1fBUdtSz5Wo"){}
+    constructor () ERC1155("https://s3.us-east-1.amazonaws.com/cdn.digard.io/Eldarune/Airdrop/1.json"){}
 
     function getItems(uint256 itemId_) public view returns(uint256 itemId, string memory ipfsHash){
         return (items[itemId_].itemId, items[itemId_].ipfsHash);
