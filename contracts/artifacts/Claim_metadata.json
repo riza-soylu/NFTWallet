@@ -681,10 +681,10 @@
 			]
 		},
 		"contracts/Claim.sol": {
-			"keccak256": "0xe3f1c3f7f0d8fc3d5ba184ccc55ac095a4edad288b2de899824ac456f768a75a",
+			"keccak256": "0xd72c803937b166c6492fceb22ec699c1a6d9728a0a2670759586931b825999c6",
 			"urls": [
-				"bzz-raw://4481241208902d2b5ddac47c722764d96c0aacdb820070fccea529882231fe2e",
-				"dweb:/ipfs/QmegagM47UUpTfRz647wJB6GXQjyogeTJA6m8mSe1zQL9m"
+				"bzz-raw://a1a4fbf1027d48bb852e691598c859bcbdaf63423b9ae4bf7e89a3c3dce0567d",
+				"dweb:/ipfs/QmNU9fSTUG3nmGtn57uk3WURCx479nWRFyFLsPQuC92fdk"
 			]
 		}
 	},
