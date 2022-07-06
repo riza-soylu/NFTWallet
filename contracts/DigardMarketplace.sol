@@ -90,8 +90,6 @@ contract DigardMarketplace is ReentrancyGuard {
       State.Created
     );
 
-    require(IERC721(nftContract).getApproved(tokenId) == address(this), "NFT must be approved to market");
-
     // change to approve mechanism from the original direct transfer to market
     IERC721(nftContract).transferFrom(msg.sender, address(this), tokenId);
 
@@ -119,7 +117,7 @@ contract DigardMarketplace is ReentrancyGuard {
     MarketItem storage item = marketItems[itemId];
 
     require(IERC721(item.nftContract).ownerOf(item.tokenId) == msg.sender, "must be the owner");
-    require(IERC721(item.nftContract).getApproved(item.tokenId) == address(this), "NFT must be approved to market");
+    
 
     item.state = State.Inactive;
 
@@ -247,7 +245,7 @@ contract DigardMarketplace is ReentrancyGuard {
       return 
         (item.buyer == address(0) 
           && item.state == State.Created
-          && (IERC721(item.nftContract).getApproved(item.tokenId) == address(this))
+         
         )? true
          : false;
     }else{
